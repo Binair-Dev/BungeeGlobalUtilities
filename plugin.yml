@@ -1,0 +1,4 @@
+name: BungeeGlobalUtilities
+main: Bungee.teleport.spigot.BukkitReceive
+version: 1.0
+author: B_nair

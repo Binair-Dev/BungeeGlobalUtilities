@@ -1,0 +1,149 @@
+Configuration:
+  usage: "&cUsage &8&l► &7"
+  information: "&8&l► &7"
+  perm: "&cYou do not have permission to do this!"
+  join: "&e%player% joined the server."
+  leave: "&e%player% left the server."
+Commandes:
+  alert:
+    aliases:
+    - al
+    commande: alert
+    permission: bungee.alert
+    usage: "/alert &7[&cmessage&7]"
+    prefix: "&c[Alert] &7"
+  find:
+    aliases:
+    - find
+    commande: find
+    permission: bungee.find
+    usage: "/find &7[&cplayer&7]"
+    notonline: "&cThis player is not connected."
+    finded: "&6%player% &7is connected to &b%server%."
+  glist:
+    aliases:
+    - glist
+    commande: glist
+    permission: bungee.glist
+    usage: "/glist &7[&cserver&7]"
+    nooneonline: "&cNo one is connected on this server."
+    global: "&7Global list: &b%global%"
+    noargs: "&7: &b %name% &7| &b%co% players &7| &b%pourcent%"
+    listof: "&7Player list on: &b%name%"
+    none: "&cNo any players are connected on this server."
+    notexist: "&cUnknown server."
+  gtp:
+    aliases:
+    - gtp
+    commande: gtp
+    permission: bungee.gtp
+    usage: "/gtp &7[&cplayer&7] &7[&cplayer&7]"
+    playeronly: "&cOnly players can do this command."
+    notconnected: "&c%player% is not connected."
+    notyourself: "&cYou can not teleport to yourself."
+    toyou: "&7Teleporting &6%player% &7to you&7."
+    tosomeone: "&7Teleporting &6%from% &7to %to%&7."
+    nothere: "&cThis player is not connected!"
+    meto: "&7You have been teleported to &c%player%&7."
+  gtphere:
+    aliases:
+    - gtphere
+    commande: gtphere
+    permission: bungee.gtphere
+    usage: "/gtphere &7[&cplayer&7]"
+    playeronly: "&cOnly players can do this command."
+    notconnected: "&c%player% is not connected."
+    notyourself: "&cYou can t teleport yourself to you."
+    toyou: "&7Teleporting &6%player% &7to you&7."
+    nothere: "&cThis player is not connected!"
+    meto: "&7You have been teleported to &c%player%&7."
+  ipcheck:
+    aliases:
+    - ipcheck
+    commande: ip
+    permission: bungee.ipcheck
+    usage: "/ip &7[&cplayer&7]"
+    nothere: "&cThis player is not connected!"
+    ipmessage: "&7IP of &6%player%&7 : &b%ip%."
+  lookup:
+    aliases:
+    - lookup
+    commande: lookup
+    permission: bungee.lookup
+    usage: "/lookup &7[&cplayer&7]"
+    online: "&7Status: &aConnected"
+    offline: "&7Status: &cDiconnected"
+    info: "&7Informations:"
+    premiere: "&7First connection : &b%first%"
+    derniere: "&7Last connection : &b%last%"
+    hour: "&7Ingame time : &b%heure%"
+    neverseen: "&cThis player never joined the server."
+  namecheck:
+    aliases:
+    - namecheck
+    commande: namecheck
+    permission: bungee.namecheck
+    usage: "/namehistory &7[&cplayer&7]"
+    information: "Loading informations about %player%"
+    historique: "&7Username history of &6%player% &7 :"
+    neverchanged: "&cThis player never changed his Username."
+  send:
+    aliases:
+    - send
+    commande: send
+    permission: bungee.send
+    usage: "/send [&call&7/&ccurrent&7/&cplayer&7]"
+    allto: "&7Teleporting all players to &b%server%&7."
+    alreadyallhere: "&cAll players are already on this server."
+    notexist: "&cUnknown server."
+    notonline: "&cThis server is not online."
+    sendallusage: "/send [&call&7]"
+    sendcurrentusage: "/send current [&cserver&7]"
+    sendelse: "/send [&cplayer&7] [&cserver&7]"
+    sendedto: "&7You have been sended to &b%server%&7."
+    nothere: "&cThis player is not connected!"
+    sendsomeone: "&7You sended &b%target% &7on: %server%"
+    alreadyonthisserver: "&cThis player is already on this server!"
+  server:
+    aliases:
+    - server
+    commande: server
+    permission: bungee.server
+    availlable: "&7You can join these servers:"
+    dejaon: "&cYou are already on this server."
+    notexist: "&cUnknown server."
+    sendedto: "&7you have been sended to &b%server%&7."
+    cantgoon: "&7You can join these servers: %server%"
+    cancel: "&7You cannot join this server"
+  uuid:
+    aliases:
+    - u
+    commande: uuid
+    permission: bungee.uuid
+    usage: "/uuid &7[&cplayer&7]"
+    message: "&7UUID de &6%pseudo%&7 : %uuid%"
+  vanish:
+    aliases:
+    - vanish
+    commande: vanish
+    permission: bungee.vanish
+    permissionother: bungee.vanish.other
+    permissionall: bungee.vanish.*
+    permissionsee: bungee.vanishsee
+    usage: "/vanish &7[&cplayer&7/&clist&7]"
+    onlyplayer: "&cOnly players can execute this command."
+    list: "&7Vanished list:"
+    remdmyvanish: "&b%player% &7just removed his vanish."
+    addmyvanish: "&b%player% &7just vanished."
+    addvanishother: "&b%sender% &7just vanished &b%target%."
+    remvanishother: "&b%sender% &7removed vanish from &b%target%."
+    notfound: "&cPlayer not fond."
+    enum: "&b"
+    nooneisvanished: "&cNo one is vanished!"
+aliases:
+  lobby:
+    /l1:
+      forward: false
+  lobby2:
+    /l2:
+      forward: false

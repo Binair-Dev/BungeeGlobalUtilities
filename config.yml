@@ -1,0 +1,149 @@
+Configuration:
+  usage: "&cUtilisation'de &8&lâ–º &7"
+  information: "&8&lâ–º &7"
+  perm: "&cVous n'avez pas la permission."
+  join: "&e%player% vient de rejoindre le serveur."
+  leave: "&e%player% vient de quitter le serveur."
+Commandes:
+  alert:
+    aliases:
+    - al
+    commande: alert
+    permission: bungee.alert
+    usage: "/alert &7[&cmessage&7]"
+    prefix: "&c[Alerte] &7"
+  find:
+    aliases:
+    - find
+    commande: find
+    permission: bungee.find
+    usage: "/find &7[&cmessage&7]"
+    notonline: "&cCe joueur n'est pas en ligne."
+    finded: "&6%player% &7est sur le serveur &b%server%."
+  glist:
+    aliases:
+    - glist
+    commande: glist
+    permission: bungee.glist
+    usage: "/glist &7[&cserveur&7]"
+    nooneonline: "&cAucun joueur n'est connectÃ© sur ce serveur."
+    global: "&7Liste globale: &b%global%"
+    noargs: "&7: &b %name% &7| &b%co% joueurs &7| &b%pourcent%"
+    listof: "&7Liste des joueurs sur le serveur: &b%name%"
+    none: "&cAucun joueur n'est connectÃ© sur ce serveur."
+    notexist: "&cCe serveur n'existe pas."
+  gtp:
+    aliases:
+    - gtp
+    commande: gtp
+    permission: bungee.gtp
+    usage: "/gtp &7[&cjoueur&7] &7[&cjoueur&7]"
+    playeronly: "&cSeul les joueurs peuvent faire cette commande."
+    notconnected: "&c%player% n'est pas connectÃ©."
+    notyourself: "&cVous ne pouvez pas vous tÃ©lÃ©porter Ã  vous:mÃªme."
+    toyou: "&7TÃ©lÃ©portation de &6%player% &7vers vous&7."
+    tosomeone: "&7TÃ©lÃ©portation de &6%from% &7vers %to%&7."
+    nothere: "&cCe joueur n'est pas connectÃ©!"
+    meto: "&7Vous avez Ã©tÃ© tÃ©lÃ©portÃ© sur &c%player%&7."
+  gtphere:
+    aliases:
+    - gtphere
+    commande: gtphere
+    permission: bungee.gtphere
+    usage: "/gtphere &7[&cjoueur&7]"
+    playeronly: "&cSeul les joueurs peuvent faire cette commande."
+    notconnected: "&c%player% n'est pas connectÃ©."
+    notyourself: "&cVous ne pouvez pas vous tÃ©lÃ©porter Ã  vous:mÃªme."
+    toyou: "&7TÃ©lÃ©portation de &6%player% &7vers vous&7."
+    nothere: "&cCe joueur n'est pas connectÃ©!"
+    meto: "&7Vous avez Ã©tÃ© tÃ©lÃ©portÃ© sur &c%player%&7."
+  ipcheck:
+    aliases:
+    - ipcheck
+    commande: ip
+    permission: bungee.ipcheck
+    usage: "/ip &7[&cmessage&7]"
+    nothere: "&cCe joueur n'est pas connectÃ©!"
+    ipmessage: "&7IP de &6%player%&7 : &b%ip%."
+  lookup:
+    aliases:
+    - lookup
+    commande: lookup
+    permission: bungee.lookup
+    usage: "/lookup &7[&cjoueur&7]"
+    online: "&7Status: &aConnectÃ©"
+    offline: "&7Status: &cDÃ©connectÃ©"
+    info: "&7Informations de connexion:"
+    premiere: "&7PremiÃ¨re connexion : &b%first%"
+    derniere: "&7DerniÃ¨re connexion : &b%last%"
+    hour: "&7Temps de jeu : &b%heure%"
+    neverseen: "&cCe joueur ne s'est jamais connectÃ©."
+  namecheck:
+    aliases:
+    - namecheck
+    commande: namecheck
+    permission: bungee.namecheck
+    usage: "/namehistory &7[&cjoueur&7]"
+    information: "Chargement des informations sur %player%"
+    historique: "&7Historique des pseudonymes de &6%player% &7 :"
+    neverchanged: "&cCe joueur n'a jamais changÃ© de pseudonyme."
+  send:
+    aliases:
+    - send
+    commande: send
+    permission: bungee.send
+    usage: "/send [&call&7/&ccurrent&7/&cjoueur&7]"
+    allto: "&7TÃ©lÃ©poration de tous les joueurs vers le serveur &b%server%&7."
+    alreadyallhere: "&cTous les joueurs sont dÃ©jÃ  sur ce serveur."
+    notexist: "&cCe serveur n'existe pas."
+    notonline: "&cCe serveur n'est pas en ligne."
+    sendallusage: "/send [&call&7]"
+    sendcurrentusage: "/send current [&cserveur&7]"
+    sendelse: "/send [&cjoueur&7] [&cserveur&7]"
+    sendedto: "&7Vous avez Ã©tÃ© envoyÃ© sur le serveur &b%server%&7."
+    nothere: "&cCe joueur n'est pas connectÃ©!"
+    sendsomeone: "&7Vous venez d'envoyer &b%target% &7sur le serveur: %server%"
+    alreadyonthisserver: "&cCe joueur est dÃ©jÃ  sur ce serveur!"
+  server:
+    aliases:
+    - server
+    commande: server
+    permission: bungee.server
+    availlable: "&7Vous pouvez vous connecter sur les serveurs:"
+    dejaon: "&cVous Ãªtes dÃ©jÃ  connectÃ© sur ce serveur."
+    notexist: "&cCe serveur n'existe pas."
+    sendedto: "&7Vous avez Ã©tÃ© envoyÃ© sur le serveur &b%server%&7."
+    cantgoon: "&7Vous pouvez vous connecter sur le serveur: %server%"
+    cancel: "&7Vous pouvez pas connecter sur ce serveur"
+  uuid:
+    aliases:
+    - u
+    commande: uuid
+    permission: bungee.uuid
+    usage: "/uuid &7[&cjoueur&7]"
+    message: "&7UUID de &6%pseudo%&7 : %uuid%"
+  vanish:
+    aliases:
+    - vanish
+    commande: vanish
+    permission: bungee.vanish
+    permissionother: bungee.vanish.other
+    permissionall: bungee.vanish.*
+    permissionsee: bungee.vanishsee
+    usage: "/vanish &7[&cjoueur&7/&clist&7]"
+    onlyplayer: "&cSeul les joueurs peuvent faire cette commande."
+    list: "&7Liste des vanish:"
+    remdmyvanish: "&b%player% &7vient de se retirer son vanish."
+    addmyvanish: "&b%player% &7vient de se mettre en vanish."
+    addvanishother: "&b%sender% &7vient de mettre &b%target% &7en vanish."
+    remvanishother: "&b%sender% &7vient de retirer &b%target% &7du vanish."
+    notfound: "&cJoueur introuvable."
+    enum: "&b"
+    nooneisvanished: "&cAucun joueur n'est en vanish!"
+aliases:
+  lobby:
+    /l1:
+      forward: false
+  lobby2:
+    /l2:
+      forward: false
